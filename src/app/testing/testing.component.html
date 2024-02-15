@@ -3,10 +3,12 @@
     <p>testing works!</p>
 </div>
 <div *ngFor="let fruit of fruits">
-    <h2 *ngIf="fruit === 'apple'; else other">
-        {{ fruit }}
-    </h2>
-    <ng-template #other>
-        {{ fruit }}
-    </ng-template>
+    <div [ngStyle]="{color: fruit === 'apple' ? 'brown':'blue'}">
+        <h2 *ngIf="fruit === 'apple'; else other">
+            {{ fruit }}
+        </h2>
+        <ng-template #other>
+            {{ fruit }}
+        </ng-template>
+    </div>
 </div>

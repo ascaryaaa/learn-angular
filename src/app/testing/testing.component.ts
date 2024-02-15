@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
 export class TestingComponent {
   isLogin = false
   fruits: Array<string> = ['apple','melon','cherry','banana','lemon','blueberry','grape']
+  
   handleClickButton() {
       this.isLogin = !this.isLogin
   }
