@@ -9,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './testing.component.css'
 })
 export class TestingComponent {
-  isLogin = true
+  isLogin = false
+  handleClickButton() {
+      this.isLogin = !this.isLogin
+  }
 }
