@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-hero-detail',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './hero-detail.component.css'
 })
 export class HeroDetailComponent {
-
+  heroName = input.required<string>()
 }
