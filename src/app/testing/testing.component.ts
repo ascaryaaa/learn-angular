@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
 })
 export class TestingComponent {
   isLogin = false
+  fruits: Array<string> = ['apple','melon','cherry']
   handleClickButton() {
       this.isLogin = !this.isLogin
   }
