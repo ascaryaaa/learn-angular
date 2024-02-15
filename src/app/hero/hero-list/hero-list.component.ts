@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './hero-list.component.css'
 })
 export class HeroListComponent {
-  
+  heroes: string = 'ironman'
 }
